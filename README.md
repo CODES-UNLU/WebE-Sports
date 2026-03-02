@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Astro Starter Kit: Basics
 
 ```sh
@@ -44,3 +45,7 @@ All commands are run from the root of the project, from a terminal:
 ## 👀 Want to learn more?
 
 Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+=======
+# WebE-Sports
+Landing page provisional para el proyecto de E-Sports de la UNLu.
+>>>>>>> f7d796de8e5e7cb80fd24d2f6f81fa19ac51997c
