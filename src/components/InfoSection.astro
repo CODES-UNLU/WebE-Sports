@@ -1,0 +1,99 @@
+---
+/* Sección de información / Acerca de */
+---
+
+<section class="relative py-24 px-4" id="about">
+	<div class="max-w-6xl mx-auto">
+
+		<!-- Título de sección -->
+		<div class="text-center mb-16">
+			<h2 class="font-display text-3xl sm:text-4xl font-bold text-white mb-4">
+				¿QUÉ ES <span class="text-cyan">E-SPORTS UNLu</span>?
+			</h2>
+			<div class="w-20 h-1 bg-gradient-to-r from-cyan to-orange mx-auto rounded-full"></div>
+		</div>
+
+		<!-- Cards -->
+		<div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
+			<!-- Card 1 -->
+			<div class="info-card group">
+				<div class="info-card-icon bg-cyan/10 text-cyan group-hover:bg-cyan/20">
+					<svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z"/>
+					</svg>
+				</div>
+				<h3 class="font-display text-xl font-bold text-white mt-6 mb-3">COMPETENCIAS</h3>
+				<p class="text-white/50 leading-relaxed text-sm">
+					Torneos internos y externos en los juegos más populares. Representá a la UNLu en competencias universitarias.
+				</p>
+			</div>
+
+			<!-- Card 2 -->
+			<div class="info-card group">
+				<div class="info-card-icon bg-orange/10 text-orange group-hover:bg-orange/20">
+					<svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"/>
+					</svg>
+				</div>
+				<h3 class="font-display text-xl font-bold text-white mt-6 mb-3">COMUNIDAD</h3>
+				<p class="text-white/50 leading-relaxed text-sm">
+					Conectá con otros gamers de la universidad. Formá equipos, compartí estrategias y hacé amigos.
+				</p>
+			</div>
+
+			<!-- Card 3 -->
+			<div class="info-card group">
+				<div class="info-card-icon bg-green-unlu/10 text-green-unlu group-hover:bg-green-unlu/20">
+					<svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+					</svg>
+				</div>
+				<h3 class="font-display text-xl font-bold text-white mt-6 mb-3">EVENTOS</h3>
+				<p class="text-white/50 leading-relaxed text-sm">
+					Eventos presenciales y online, streamings en vivo, charlas y actividades para toda la comunidad universitaria.
+				</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+<style>
+	.info-card {
+		position: relative;
+		padding: 2rem;
+		border-radius: 1rem;
+		border: 1px solid rgba(100, 255, 218, 0.08);
+		background: rgba(30, 41, 59, 0.3);
+		backdrop-filter: blur(12px);
+		transition: all 0.4s ease;
+		overflow: hidden;
+	}
+	.info-card::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		height: 2px;
+		background: linear-gradient(90deg, transparent, rgba(100, 255, 218, 0.3), transparent);
+		opacity: 0;
+		transition: opacity 0.4s ease;
+	}
+	.info-card:hover {
+		border-color: rgba(100, 255, 218, 0.2);
+		transform: translateY(-4px);
+		box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+	}
+	.info-card:hover::before {
+		opacity: 1;
+	}
+	.info-card-icon {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		width: 3.5rem;
+		height: 3.5rem;
+		border-radius: 0.75rem;
+		transition: all 0.3s ease;
+	}
+</style>

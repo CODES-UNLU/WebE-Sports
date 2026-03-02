@@ -1,0 +1,47 @@
+---
+/* Marquee de juegos / ticker animado */
+const games = [
+	'LEAGUE OF LEGENDS', 'VALORANT', 'CS2', 'DOTA 2', 'ROCKET LEAGUE',
+	'FIFA', 'FORTNITE', 'APEX LEGENDS', 'OVERWATCH 2', 'TFT',
+	'LEAGUE OF LEGENDS', 'VALORANT', 'CS2', 'DOTA 2', 'ROCKET LEAGUE',
+	'FIFA', 'FORTNITE', 'APEX LEGENDS', 'OVERWATCH 2', 'TFT',
+];
+---
+
+<div class="relative py-8 overflow-hidden border-y border-white/5 bg-dark-lighter/30">
+	<!-- Fade edges -->
+	<div class="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-dark to-transparent z-10"></div>
+	<div class="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-dark to-transparent z-10"></div>
+
+	<div class="marquee-container">
+		<div class="marquee-track">
+			{games.map((game, i) => (
+				<span class="marquee-item">
+					<span class="text-cyan/30 mr-4">◆</span>
+					<span class="font-display text-lg sm:text-xl font-bold text-white/15 tracking-wider whitespace-nowrap">{game}</span>
+				</span>
+			))}
+		</div>
+	</div>
+</div>
+
+<style>
+	.marquee-container {
+		width: 100%;
+		overflow: hidden;
+	}
+	.marquee-track {
+		display: flex;
+		width: fit-content;
+		animation: marquee 40s linear infinite;
+	}
+	.marquee-item {
+		display: inline-flex;
+		align-items: center;
+		padding: 0 1rem;
+		flex-shrink: 0;
+	}
+	.marquee-track:hover {
+		animation-play-state: paused;
+	}
+</style>
